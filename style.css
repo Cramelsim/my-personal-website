@@ -1,9 +1,43 @@
-  body {
+body {
+    background-image: url('fitness.jpeg'); /* Add the image */
+    background-size: cover; /* Scale image to cover entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: black;
     color: #333;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange items in a row */
+  }
+  
+  .navbar ul li {
+    margin: 0 15px; /* Add horizontal spacing between links */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 15px; /* Add padding for clickable area */
+    transition: background 0.3s, color 0.3s; /* Smooth hover effect */
+    border-radius: 5px; /* Slightly rounded corners */
+  }
+  
+  .navbar ul li a:hover {
+    background: #575757; /* Change background on hover */
+    color: #ffcc00; /* Highlight text color on hover */
   }
   
   .container {
