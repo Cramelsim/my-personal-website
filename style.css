@@ -7,6 +7,7 @@
 
 body {
   background-color:black;
+
 }
 
 header {
@@ -49,10 +50,67 @@ header {
   padding: 5px 10px; 
   border-radius: 5px;
 }
-.home {
-  padding-top: 100px; 
+.aboutMe {
+  padding-top: 100px;
   color: white;
-  text-align: center;
   font-size: 20px;
-  line-height: 1.6;
+  padding: 0 10%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 2;
+}
+.aboutMe-content{
+  max-width: 600px;
+}
+.aboutMe-content h1{
+font-size: 56px;
+font-weight: 700;
+}
+.aboutMe-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: aqua;
+}
+.aboutMe-content p{
+  font-size: 16px;
+}
+.Contact{
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  background:red;
+  display: flex;
+  justify-content: space-between;
+}
+.Contact a{ 
+position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid #00abf0;
+border-radius: 50%;
+font-size: 20px;
+color: #00abf0;
+text-decoration: none;
+z-index: 1;
+overflow: hidden;
+transition: .5s;
+}
+.Contact a :hover{
+  color: #081b29;
+}
+.Contact a ::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0; 
+  z-index: 1;
+  transition: .5s;
 }
