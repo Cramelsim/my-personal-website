@@ -1,19 +1,23 @@
-# My Personal Website
-
+# My Personal Website 
+This is a personal portfolio website that showcases my skills, projects, and contact information. The website is built using HTML, CSS, and Font Awesome icons. It is designed to be responsive and provides a clean, user-friendly interface for visitors to learn more about me and my work.
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
 - [Contributing](#contributing)
 
 ### Features
-- Add and Delete Tasks
+- Navigation Bar: Links to different sections of the page (Home, About Me, Skills, Projects, Contact Me)
+- About Me Section: Displays information about myself and a profile picture.
+- Skills Section: Lists the technologies I work with in web development.
+- Projects Section: Showcases some of the projects I have worked on.
+-Contact Section: Allows visitors to reach out via email.
 ## Installations  instructions
 1. **Fork the repository**
 2. 
 ```bash
- cd todo-app
-
- 4. **Open index.html**
+ cd my-personal-website
+ ```
+3.  **Open index.html**
  ## Contributing
  Contributions are welcome ! Please follow these steps:
  1. Fork the repo
