@@ -406,3 +406,6 @@ footer p:nth-child(2){
 bottom: 35px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
