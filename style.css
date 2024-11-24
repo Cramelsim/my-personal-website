@@ -7,7 +7,30 @@
 
 body {
   background-color:black;
+  margin: 0;
+  overflow: auto;
 
+}
+.hero{
+  position: fixed;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
+  /*background-image: url('../background.jpeg');*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 8%;
+  height: 60px;
+  position: fixed;
 }
 
 header {
@@ -25,41 +48,223 @@ header {
 
 .logo {
   font-size: 25px;
-  color: #ffcc00;
+  color: #ffff;
   text-decoration: none;
+  letter-spacing: 1px;
   font-weight: 600;
+  cursor: pointer;
+  margin-right: 400px;
+  margin-left: -20px;
 }
 
-.navbar {
-  display: flex; 
-  list-style: none; 
-  gap: 20px; 
+span{
+  color: #ff0000;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover{
+  color: #ff0000;
+  transition: .4s;
+}
+.btn{
+  background-color: #ff0000;
+  column-gap: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+margin-right: 5px;
+}
+.btn:hover{
+  transform: scale(1.2);
 }
 
-.navbar a {
-  text-decoration: none; 
+.content{
+  position: absolute;
+  top: 50%;
+  left:8%;
+  transform: translate(-50%);
+}
+h1{
+  color: #fff;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+h3{
   color: white;
-  font-size: 18px;
-  font-weight: 500;
-  transition: color 0.3s ease; 
+  font-size: 25px;
+  margin-bottom: 50px;
 }
-
-.navbar a:hover {
-  color: black;
-  background-color: #ffcc00;
-  padding: 5px 10px; 
-  border-radius: 5px;
-}
-.aboutMe {
-  padding-top: 100px;
-  color: white;
+h4{
+  color: #fcfc;
+  letter-spacing: 2px;
   font-size: 20px;
+}
+.newslatter form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+.newslatter form input:first-child{
+display:inline-block;
+width: 100%;
+padding: 14px 130px 14px 15px;
+border:2px solid #f9004d;
+outline: none;
+border-radius: 30px;
+}
+.newslatter form input:last-child{
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border:none;
+  padding :10px 30px;
+  border-radius:30px ;
+  background-color: #f9004d;
+  color: #fff;
+  box-shadow: 0px 0px 5px #858585;
+  top:6px;
+  right:6px;
+}
+
+.about{
+  height: auto;
+  width:100%;
+  padding-top: 20px;
+  background-color: #191919;
+  color: white;
+  display: flex;
+  justify-content: center;
   padding: 0 10%;
-  height: 100vh;
+}
+
+.about img{
+  height:auto;
+  width:430px;
+}
+.about-text{
+  width:550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  margin-top: 2;
+  justify-content: space-around;
 }
+.about-text h2{
+  color: #fff;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-top:20px ;
+}
+.about-text h5{
+  color: white;
+  letter-spacing: 2px;
+  font-family: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about-text p{
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+button{
+  background-color: #f9004d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.skills{
+  background: #101010;
+  width: 100%;
+  padding: 100px 0px;
+}
+.title h2 {
+  color: #fff;
+  font-size: 75px;
+  width: 1130;
+  margin: 30px auto;
+  text-align: center;
+
+}
+.box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card{
+  height: 365px;
+  width: 335px;
+  padding:20px 35px;
+  background: #191919;
+  border-radius:20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+}
+.card i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin:25% 0px;
+color: red;
+}
+h5{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra{
+  color: #fcfc;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .aboutMe-content{
   max-width: 600px;
 }
@@ -75,6 +280,25 @@ font-weight: 700;
 .aboutMe-content p{
   font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Contact{
   position: absolute;
   bottom: 40px;
@@ -113,4 +337,14 @@ transition: .5s;
   background: #00abf0; 
   z-index: 1;
   transition: .5s;
+}
+.skills{
+  padding-top: 100px;
+  color: white;
+  font-size: 20px;
+  padding: 0 10%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 2
 }
