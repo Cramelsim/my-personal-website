@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,11 +8,12 @@
 body {
   background-color:black;
   margin: 0;
+  padding: 0;
   overflow: auto;
 
 }
 .hero{
-  position: fixed;
+  position: relative;
   top: 0%;
   height: 100vh;
   width: 100%;
@@ -31,6 +32,8 @@ nav{
   padding:0 8%;
   height: 60px;
   position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header {
@@ -84,7 +87,6 @@ nav ul li a:hover{
   padding: 10px 25px;
   border-radius: 30px;
   transition: transform .4s;
-margin-right: 5px;
 }
 .btn:hover{
   transform: scale(1.2);
@@ -139,6 +141,7 @@ border-radius: 30px;
 }
 
 .about{
+  margin-top:80px;
   height: auto;
   width:100%;
   padding-top: 20px;
@@ -244,107 +247,106 @@ h5{
   font-size: 23px;
   margin-bottom: 15px;
 }
-.pra{
+.pra p{
   color: #fcfc;
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.aboutMe-content{
-  max-width: 600px;
-}
-.aboutMe-content h1{
-font-size: 56px;
-font-weight: 700;
-}
-.aboutMe-content h3{
-  font-size: 32px;
-  font-weight: 700;
-  color: aqua;
-}
-.aboutMe-content p{
-  font-size: 16px;
+.card .button{
+  background-color: #f9004d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s;
 }
 
+.card .button:hover{
+  background-color: transparent;
+  border: 2px solid red;
+  cursor: pointer;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Contact{
-  position: absolute;
-  bottom: 40px;
-  width: 170px;
-  background:red;
-  display: flex;
-  justify-content: space-between;
 }
-.Contact a{ 
-position: relative;
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 40px;
-height: 40px;
-background: transparent;
-border: 2px solid #00abf0;
-border-radius: 50%;
-font-size: 20px;
-color: #00abf0;
-text-decoration: none;
-z-index: 1;
-overflow: hidden;
-transition: .5s;
-}
-.Contact a :hover{
-  color: #081b29;
-}
-.Contact a ::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #00abf0; 
-  z-index: 1;
-  transition: .5s;
-}
-.skills{
-  padding-top: 100px;
-  color: white;
-  font-size: 20px;
-  padding: 0 10%;
-  height: 100vh;
+.contact-me{
+  width: 100px;
+  height: 290px;
+  background: #191919;
   display: flex;
   align-items: center;
-  margin-top: 2
+  flex-direction: column;
+  justify-content: center;
 }
+.contact-me p{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+contact-me .button-two{
+  background-color: #f9004d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+.contact-me .button-two:hover{
+  background-color: transparent;
+  border: 2px solid red;
+  cursor: pointer;
+}
+footer {
+  position:relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(1){
+font-size: 30px;
+color: #fff;
+margin-bottom: 20px;
+font-weight: bold;
+}
+footer p:nth-child(2){
+  column-gap: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+.social{
+  display: flex;
+}
+.social a{
+  width:45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9004d;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social a:hover{
+  transform: scale(1.3);
+  transition:.3s;
+}
+.end{
+  position: absolute;
+  color: #f9004d;
+bottom: 35px;
+}
+
