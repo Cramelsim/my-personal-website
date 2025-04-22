@@ -21,7 +21,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: #24252a;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-background.jpeg');
   background-size: cover;
   background-position: center;
 }
