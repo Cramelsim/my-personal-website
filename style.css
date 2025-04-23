@@ -1,120 +1,110 @@
-/* Global Styles */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
+  background-color: #1a1a1a;
+  color: white;
 }
 
-/* Header & Hero Section */
+/* Header/Hero section styling */
 header {
-  width: 100%;
   height: 100vh;
-  background-color: #24252a;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-background.jpeg');
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
 }
 
 .hero {
-  height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 10%;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
+  padding: 30px 0;
+  background-color: black;
+  padding: 15px 5%; 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.logo {
-  color: white;
-  font-size: 35px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.logo span {
-  color: #4E9F3D;
+.logo img {
+  border-radius: 50%;
 }
 
 nav ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
 }
 
 nav ul li {
-  padding: 10px 20px;
+  margin: 0 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 nav ul li a:hover {
-  color: #4E9F3D;
+  color: #f9004d;
 }
 
-.btn {
-  background-color: #4E9F3D;
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: transform 0.4s;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
+/* Content styling - this is what you're looking for */
 .content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 0 10%;
-}
-
-.content h4 {
-  letter-spacing: 2px;
-  font-size: 20px;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  max-width: 600px;
 }
 
 .content h1 {
-  font-size: 70px;
-  margin: 20px 0;
-  animation: fadeIn 1.5s;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
-.content h3 {
-  font-size: 25px;
-  margin-bottom: 50px;
+.content h1:after {
+  content: "";
+  display: block;
+  width: 450px;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.content p {
+  margin: 20px 0 30px 0;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #f9004d;
+  color: white;
 }
 
 .newslatter form {
@@ -150,6 +140,34 @@ nav ul li a:hover {
 
 .newslatter form input:last-child:hover {
   background-color: #3d7e31;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  .content h1 {
+    font-size: 60px;
+  }
+  
+  .content h1:after {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    display: none; /* For mobile, you might want to add a hamburger menu */
+  }
+  
+  .content h1 {
+    font-size: 40px;
+  }
 }
 
 /* About Section */
